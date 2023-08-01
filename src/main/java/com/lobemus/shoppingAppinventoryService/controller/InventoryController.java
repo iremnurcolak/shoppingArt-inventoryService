@@ -13,6 +13,7 @@ public class InventoryController {
 
     private final InventoryService inventoryService;
 
+    //request url: localhost:8082/api/inventory/xiaomi_12t
     @GetMapping("/{skuCode}")
     @ResponseStatus(HttpStatus.OK)
     public boolean isInStock(@PathVariable("skuCode")String skuCode) {
